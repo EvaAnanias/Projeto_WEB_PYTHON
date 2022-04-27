@@ -7,8 +7,8 @@ def home(request):
 
 
 def cadastro(request):
-    return HttpResponse('Tela de Cadastro')
+    return render(request, 'calendario/cadastro.html')
 
 
 def calendario(request):
-    return HttpResponse('Tela do Calendario')
+    return render(request, 'calendario/calendario.html')
