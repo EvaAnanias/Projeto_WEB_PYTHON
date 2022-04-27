@@ -1,3 +1,15 @@
-from django.shortcuts import render
+from django.http import HttpResponse
 
-# Create your views here.
+# from django.shortcuts import render
+
+
+def home(request):
+    return HttpResponse('Home 1')
+
+
+def cadastro(request):
+    return HttpResponse('Tela de Cadastro')
+
+
+def calendario(request):
+    return HttpResponse('Tela do Calendario')
