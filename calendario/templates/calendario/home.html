@@ -1,13 +1,125 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela principal - Calendário</title>
+    <link rel="shortcut icon" href="calendario.png" type="icon">
+    <!-- <link rel="stylesheet" type="text/css" href="home.css"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"
+        integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css"
+        integrity="sha512-OivR4OdSsE1onDm/i3J3Hpsm5GmOVvr9r49K3jJ0dnsxVzZgaOJ5MfxEAxCyGrzWozL9uJGKz6un3A7L+redIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/solid.min.css"
+        integrity="sha512-qzgHTQ60z8RJitD5a28/c47in6WlHGuyRvMusdnuWWBB6fZ0DWG/KyfchGSBlLVeqAz+1LzNq+gGZkCSHnSd3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Tela principal - Agenda</title>
+
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            font-family: sans-serif;
+        }
+
+        .div_h1 {
+            width: 100%;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+
+        .class_h1 {
+            padding: 3%;
+        }
+
+        .div_h2 {
+            width: 100%;
+            margin-top: 6%;
+            text-align: center;
+        }
+
+        .div_button {
+            margin-top: 5%;
+            text-align: center;
+            padding: 1%;
+        }
+
+        button {
+            padding: 1.3em 3em;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            font-weight: 500;
+            color: #000;
+            background-color: #fff;
+            border: none;
+            border-radius: 45px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease 0s;
+            cursor: pointer;
+            outline: none;
+        }
+
+        button:hover {
+            background-color: #2EE59D;
+            box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+            color: #fff;
+            transform: translateY(-7px);
+        }
+
+        button:active {
+            transform: translateY(-1px);
+        }
+
+        .div_footer {
+            background-color: black;
+            bottom: 0;
+            position: fixed;
+            width: 100%;
+            text-align: center;
+        }
+
+        #footer {
+            color: white;
+            padding: 1%;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Home</h1>
-    
+
+    <header>
+        <div class="div_h1">
+            <h1 class="class_h1"><i class="fa-solid fa-calendar-days"></i> Agenda</h1>
+        </div>
+    </header>
+
+    <aside>
+
+        <div class="div_h2">
+            <h2>O que deseja fazer?</h2>
+        </div>
+
+        <div class="div_button">
+            <a href="cadastro/"><button title="Cadastrar tarefas">Cadastrar tarefas</button></a>
+        </div>
+        <div class="div_button">
+            <a href="cadastro/"><button title="Visualizar agenda">Visualizar agenda</button></a>
+        </div>
+
+    </aside>
+
+    <footer>
+        <div class="div_footer">
+            <p id="footer">&copy; Copyright 2022 - Eva Maria Ananias. All Rights Reserved</p>
+        </div>
+    </footer>
+
 </body>
+
 </html>
