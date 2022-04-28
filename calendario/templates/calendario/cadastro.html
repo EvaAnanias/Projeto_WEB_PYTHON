@@ -1,13 +1,173 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"
+        integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css"
+        integrity="sha512-OivR4OdSsE1onDm/i3J3Hpsm5GmOVvr9r49K3jJ0dnsxVzZgaOJ5MfxEAxCyGrzWozL9uJGKz6un3A7L+redIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/solid.min.css"
+        integrity="sha512-qzgHTQ60z8RJitD5a28/c47in6WlHGuyRvMusdnuWWBB6fZ0DWG/KyfchGSBlLVeqAz+1LzNq+gGZkCSHnSd3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Cadastro</title>
+
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            font-family: sans-serif;
+        }
+
+        .div_h1 {
+            width: 100%;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+
+        .class_h1 {
+            padding: 2%;
+        }
+
+        .div_button {
+            width: 20%;
+            margin-top: 5px;
+        }
+
+        .class_button {
+            display: flex;
+            height: 3em;
+            width: 100px;
+            align-items: center;
+            justify-content: center;
+            background-color: #eeeeee4b;
+            border-radius: 3px;
+            letter-spacing: 1px;
+            transition: all 0.2s linear;
+            cursor: pointer;
+            border: none;
+            background: #fff;
+        }
+
+        .class_button>svg {
+            margin-right: 5px;
+            margin-left: 5px;
+            font-size: 20px;
+            transition: all 0.4s ease-in;
+        }
+
+        .class_button:hover>svg {
+            font-size: 1.2em;
+            transform: translateX(-5px);
+        }
+
+        .class_button:hover {
+            background-color: rgba(46, 229, 157, 0.4);
+            transform: translateY(-2px);
+        }
+
+        /* Parte de dentro do fieldset */
+
+        .class_fieldset {
+            width: 80%;
+            margin-left: 10%;
+        }
+
+        .class_label {
+            margin: 20px 0;
+            box-sizing: border-box;
+            padding: 1%;
+        }
+
+        .class_input {
+            width: 40%;
+            padding: 1%;
+            border-radius: 15px;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        .lado {
+            float: left;
+            margin: 0 10px 10px 0;
+        }
+
+        .a {
+            clear: both;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Cadastro</h1>
-    
+    <header>
+        <div class="div_h1">
+            <h1 class="class_h1"><i class="fa-solid fa-calendar-days"></i> Cadastro</h1>
+        </div>
+        <div class="div_button">
+            <a href="http://127.0.0.1:8000/"><button class="class_button"><svg height="16" width="16"
+                        xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024">
+                        <path
+                            d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z">
+                        </path>
+                    </svg><span>Voltar</span>
+                </button>
+            </a>
+        </div>
+    </header>
+
+    <aside>
+        <form action="">
+            <fieldset class="class_fieldset">
+
+                <label class="class_label a" for="nome_compromisso">Nome do compromisso: </label> <br>
+                <input class="class_input" type="text" id="nome_compromisso" name="nome_compromisso" required
+                    placeholder="Adicione o nome do compromisso...">
+                <br> <br>
+
+                <label class="class_label" for="data_compromisso">Data do compromisso: </label> <br>
+                <input class="class_input" type="date" id="data_compromisso" name="data_compromisso" required
+                    placeholder="">
+                <br> <br>
+
+                <label class="class_label" for="hora_inicio">Hora do inicio: </label> <br>
+                <input class="class_input" type="time" id="hora_inicio" name="hora_inicio" required placeholder="">
+                <br> <br>
+
+                <label class="class_label" for="hora_termino">Hora do término: </label> <br>
+                <input class="class_input" type="time" id="hora_termino" name="hora_termino" required placeholder="">
+                <br> <br>
+
+                <label class="class_label" for="local">Local do compromisso: </label> <br>
+                <input class="class_input lado" type="text" id="local" name="local" required
+                    placeholder="Informe o local do comprimisso...">
+                <br> <br>
+
+                <label class="class_label a" style="border: solid 1px red;" for="status">Selecione o status
+                    do compromisso:</label>
+                <select class="class_input" style="width: 16%;" name="status" id="status">
+
+                    <option value="agendado" select>Agendado</option>
+                    <option value="realizado">Realizado</option>
+                    <option value="cancelado">Cancelado</option>
+
+                </select>
+                <br> <br>
+
+                <label class="class_label" for="area">Observações: <a
+                        style="font-size: 0.8em; opacity: 80%;">(opcional)</a> </label> <br>
+                <textarea class="class_input" id="area" name="message" rows="10" cols="30"> </textarea> <br> <br>
+
+            </fieldset>
+        </form>
+    </aside>
+
 </body>
+
 </html>
