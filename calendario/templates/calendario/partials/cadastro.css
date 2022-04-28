@@ -1,0 +1,126 @@
+    * {
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+    }
+
+    .div_h1 {
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    }
+
+    .class_h1 {
+    padding: 2%;
+    }
+
+    .class_button>svg {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+    }
+
+    .class_button:hover>svg {
+    font-size: 1.2em;
+    color: #fff;
+    transform: translateX(-5px);
+    }
+
+    .class_button:hover {
+    background-color: rgba(46, 229, 157, 0.4);
+    transform: translateY(-2px);
+    }
+
+    /* Parte de dentro do fieldset */
+
+    .class_fieldset {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    }
+
+    .class_label {
+    margin: 20px 0;
+    box-sizing: border-box;
+    padding: 1%;
+    }
+
+    .class_input {
+    width: 40%;
+    padding: 1%;
+    border-radius: 15px;
+    box-sizing: border-box;
+    outline: none;
+    }
+
+    .lado {
+    float: left;
+    margin: 0 10px 10px 0;
+    }
+
+    .a {
+    clear: both;
+    }
+
+    /* Botão de enviar */ 
+
+    .div_button {
+        border: solid 1px black;
+        align-items: center;
+        text-align: center;
+    }
+
+    .div_button_voltar {
+        width: 30%;
+        margin-top: 5%;
+        text-align: center;
+        padding: 1%;
+        border: solid 1px red;
+        float: left;
+    }
+
+    .div_button_enviar {
+        width: 30%;
+        margin-top: 5%;
+        text-align: center;
+        padding: 1%;
+        border: solid 1px red;
+
+    }
+    
+    .button-enviar, .button-voltar {
+        padding: 1.3em 3em;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        font-weight: 500;
+        color: #000;
+        background-color: #fff;
+        border: none;
+        border-radius: 45px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none;
+    }
+    
+    button:hover {
+        background-color: #2EE59D;
+        box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+        color: #fff;
+        transform: translateY(-7px);
+    }
+    
+    button:active {
+        transform: translateY(-1px);
+    }
+    
+    .div_footer {
+        background-color: black;
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+        text-align: center;
+    }
