@@ -1,4 +1,5 @@
 from django.urls import path
+
 from calendario.views import cadastro, calendario, home
 
 urlpatterns = [
